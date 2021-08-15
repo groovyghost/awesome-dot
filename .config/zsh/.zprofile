@@ -1,0 +1,1 @@
+fortune ~/.scripts/quotes/quotes
