@@ -101,11 +101,11 @@ local themes = {
 local chosen_theme = themes[5]
 local modkey       = "Mod4"
 local altkey       = "Mod1"
-local terminal     = "urxvtc"
+local terminal     = "alacritty"
 local vi_focus     = false -- vi-like client focus https://github.com/lcpz/awesome-copycats/issues/275
 local cycle_prev   = true  -- cycle with only the previously focused client or all https://github.com/lcpz/awesome-copycats/issues/274
-local editor       = os.getenv("EDITOR") or "nvim"
-local browser      = "librewolf"
+local editor       = "vim"
+local browser      = "chromium"
 
 awful.util.terminal = terminal
 awful.util.tagnames = { "1", "2", "3", "4", "5" }
@@ -797,3 +797,13 @@ client.connect_signal("focus", function(c) c.border_color = beautiful.border_foc
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 
 -- }}}
+
+-- Appearance stuff
+beautiful.useless_gap = 10
+beautiful.notification_opacity = '100'
+beautiful.notification_icon_size = 80
+beautiful.notification_bg = '(0,0,0)'
+beautiful.notification_fg = '#d4be98'
+
+-- Autostart
+awful.spawn.with_shell("picom --experimental-backends")
