@@ -71,9 +71,9 @@ echo "exec awesome" >> ~/.xinitrc
 
 #Pull down dotfiles from Github
 cd ~
-git clone https://github.com/ghostr72/dots
+git clone https://github.com/ghostr72/dots.git
 
 #Linking up dotfiles & stuff
-mv -bv dots/* ~/ && rm -rf dots
+mv -bv dots/.* ~/ && rm -rf dots
 
 echo "Installation complete, restart, or run 'startx' to get started"
