@@ -60,7 +60,7 @@ otf-font-awesome-5-free
 otf-font-awesome-4
     )
 
-sudo pacman -S --noconfirm ${pacman[@]}
+pacman -S --noconfirm ${pacman[@]}
 yay -S --noconfirm ${yay[@]}
 
 # xinitrc stuff
@@ -74,6 +74,6 @@ cd ~
 git clone https://github.com/ghostr72/dots.git
 
 #Linking up dotfiles & stuff
-mv -bv dots/.* ~/ && rm -rf dots
+mv -v dots/.* ~/ && rm -rf dots
 
 echo "Installation complete, restart, or run 'startx' to get started"
