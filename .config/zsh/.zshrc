@@ -46,10 +46,10 @@ PS1=" \[\033[1;36m\]\w >\[\033[1;34m\]>\[\033[0m\] "
 
 # Aliases
 ## App launchers
-alias ghost='startx' # Start Xserver
-alias pac='sudo pacman'
-alias weather='clear && curl wttr.in' # Display weather
-alias tty='tty-clock -C6 -c -t' #Custom TTY clock
+#alias ghost='startx' # Start Xserver
+#alias pac='sudo pacman'
+#alias weather='clear && curl wttr.in' # Display weather
+#alias tty='tty-clock -C6 -c -t' #Custom TTY clock
 #alias cpy='xclip -selection -c' #copy the output of a command to clipboard
 #alias hist= 'history | cut -c 8- sort | uniq | fzf | tr '\\n' '' | xclip -selection c' #copy the command to clipboard from history
 #alias shot='flameshot gui' #Screenshot
@@ -66,8 +66,8 @@ alias tty='tty-clock -C6 -c -t' #Custom TTY clock
 #alias rec='gpg --recv-keys --keyserver hkp://pgp.mit.edu'
 #alias todo='cat ~/Dropbox/writing/notes/To-do.md'
 #alias todoe='nvim ~/Dropbox/writing/notes/To-do.md'
-alias reset='cd ~; clear; source ~/.config/zsh/.zprofile'
-alias fetch='clear && neofetch && fortune ~/.scripts/quotes/quotes'
+#alias reset='cd ~; clear; source ~/.config/zsh/.zprofile'
+#alias fetch='clear && neofetch && fortune ~/.scripts/quotes/quotes'
 
 
 

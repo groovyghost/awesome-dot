@@ -18,12 +18,12 @@ local wibox         = require("wibox")
 local beautiful     = require("beautiful")
 local naughty       = require("naughty")
 local lain          = require("lain")
-local xrandr        = require("xrandr")
 --local menubar       = require("menubar")
 local freedesktop   = require("freedesktop")
 local hotkeys_popup = require("awful.hotkeys_popup")
                       require("awful.hotkeys_popup.keys")
 local mytable       = awful.util.table or gears.table -- 4.{0,1} compatibility
+local xrandr        = require("xrandr")
 
 -- }}}
 
@@ -86,25 +86,18 @@ awful.spawn.with_shell(
 -- {{{ Variable definitions
 
 local themes = {
-    "blackburn",       -- 1
-    "copland",         -- 2
-    "dremora",         -- 3
-    "holo",            -- 4
-    "multicolor",      -- 5
-    "powerarrow",      -- 6
-    "powerarrow-dark", -- 7
-    "rainbow",         -- 8
-    "steamburn",       -- 9
-    "vertex"           -- 10
+    "multicolor",      -- 1
+    "powerarrow-dark", -- 2
+    "steamburn",       -- 3
 }
 
-local chosen_theme = themes[5]
+local chosen_theme = themes[2]
 local modkey       = "Mod4"
 local altkey       = "Mod1"
 local terminal     = "alacritty"
 local vi_focus     = false -- vi-like client focus https://github.com/lcpz/awesome-copycats/issues/275
 local cycle_prev   = true  -- cycle with only the previously focused client or all https://github.com/lcpz/awesome-copycats/issues/274
-local editor       = "vim"
+local editor       = os.getenv("EDITOR") or "nvim"
 local browser      = "chromium"
 
 awful.util.terminal = terminal
@@ -112,12 +105,12 @@ awful.util.tagnames = { "1", "2", "3", "4", "5" }
 awful.layout.layouts = {
     awful.layout.suit.floating,
     awful.layout.suit.tile,
-    awful.layout.suit.tile.left,
     awful.layout.suit.tile.bottom,
-    awful.layout.suit.tile.top,
+    awful.layout.suit.spiral,
+    --awful.layout.suit.tile.left,
+    --awful.layout.suit.tile.top,
     --awful.layout.suit.fair,
     --awful.layout.suit.fair.horizontal,
-    --awful.layout.suit.spiral,
     --awful.layout.suit.spiral.dwindle,
     --awful.layout.suit.max,
     --awful.layout.suit.max.fullscreen,
@@ -412,8 +405,8 @@ globalkeys = mytable.join(
     end, {description = "restore minimized", group = "client"}),
 
     -- Dropdown application
-    awful.key({ modkey, }, "z", function() xrandr.xrandr() end),
-              {description = "Multiple Monitor", group = "launcher"}),
+    awful.key({ modkey, }, "z", function () xrandr.xrandr() end,
+              {description = "multi window", group = "launcher"}),
 
     -- Widgets popups
     awful.key({ altkey, }, "c", function () if beautiful.cal then beautiful.cal.show(7) end end,
@@ -800,10 +793,6 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 
 -- Appearance stuff
 beautiful.useless_gap = 10
-beautiful.notification_opacity = '100'
-beautiful.notification_icon_size = 80
-beautiful.notification_bg = '(0,0,0)'
-beautiful.notification_fg = '#d4be98'
 
 -- Autostart
 awful.spawn.with_shell("picom --experimental-backends")
