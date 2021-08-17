@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
-read -s -p "Enter Password for sudo: " sudoPW
-echo $sudoPW | sudo pacman -Sy
-
+sudo pacman -Sy
 # Set up YAY (AUR Helper)
 cd ~
 git clone https://aur.archlinux.org/yay.git
@@ -24,7 +22,6 @@ ffmpeg
 sxiv
 maim
 xclip
-picom
 ttf-hack
 ttf-joypixels 
 noto-fonts 
