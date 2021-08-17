@@ -1,11 +1,11 @@
 # Dotfiles
-These are my dot files. I primarily use [Arch](https://www.archlinux.org), but on occasion have been known to use [Arco](https://arcolinux.com/), [Manjaro](https://manjaro.org), or some other Arch based distro; so that's where I take my que. I also run Debian or Ubuntu on a few server type systems, so I also try to make sure my dotfiles work there as well (let me know if you have issues).
+These are my dot files for Awesome WM in Arch.
 
 **The main things here are:**
 1. My [Awesome Window Manager](https://awesomewm.org/) configuration with [Copycats theme](https://github.com/lcpz/awesome-copycats).
 2. My [Zsh](https://www.zsh.org/) configuration.
 3. My [Alacritty](https://github.com/alacritty/alacritty) configuration.
-4. I use [Jonaburg's Picom Fork](https://github.com/jonaburg/picom) for transparency and whatnot..
+4. I use [Jonaburg's Picom Fork](https://github.com/jonaburg/picom) for transparency.
 
 ```
                    -`                    ghost@Arch
