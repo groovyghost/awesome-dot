@@ -1,4 +1,4 @@
-##Dotfiles
+#Dotfiles
 These are my dot files for Awesome WM in Arch.
 
 **The main things here are:**
@@ -28,7 +28,7 @@ These are my dot files for Awesome WM in Arch.
  `++:.                           `-/+/   Memory: 337MiB / 3819MiB
  .`                                 `/
 ```
-##Usage
+#Usage
 ```
 git clone https://github.com/ghostr72/dots.git
 cd dots
