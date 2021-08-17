@@ -7,6 +7,8 @@ These are my dot files for Awesome WM in Arch.
 3. My [Alacritty](https://github.com/alacritty/alacritty) configuration.
 4. I use [Jonaburg's Picom Fork](https://github.com/jonaburg/picom) for transparency.
 
+![Screenshot](https://github.com/ghostr72/dots/blob/main/desktop.jpg)
+
 ```
                    -`                    ghost@Arch
                   .o+`                   -----------
