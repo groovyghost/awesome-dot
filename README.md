@@ -13,7 +13,7 @@ These are my dot files for Awesome WM in Arch.
                  `ooo/                   OS: Arch Linux
                 `+oooo:                  Host: HP 15 Notebook PC 
                `+oooooo:                 Kernel: Linux 5.12.10-arch1-1
-               -+oooooo+:                Uptime: 22 hours, 16 mins
+               -+oooooo+:                Uptime: 14 hours, 16 mins
              `/:-:++oooo+:               Packages: 494 (pacman)
             `/++++/+++++++:              Shell: zsh 5.8
            `/++++++++++++++:             Resolution: 1366x768
