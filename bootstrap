@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+read -s -p "Enter Password for sudo: " sudoPW
+echo $sudoPW | sudo pacman -Sy
+
 # Set up YAY (AUR Helper)
 cd ~
 git clone https://aur.archlinux.org/yay.git
@@ -63,6 +66,8 @@ otf-font-awesome-4
 pacman -S --noconfirm ${pacman[@]}
 yay -S --noconfirm ${yay[@]}
 
+#change default shell
+chsh -s /bin/zsh
 # xinitrc stuff
 cp /etc/X11/xinit/xinitrc ~/.xinitrc
 sed -i '51,55d' ~/.xinitrc
@@ -76,4 +81,8 @@ git clone https://github.com/ghostr72/dots.git
 #Linking up dotfiles & stuff
 mv -v dots/.* ~/ && rm -rf dots
 
-echo "Installation complete, restart, or run 'startx' to get started"
+echo "Installation complete, Login & run 'startx' to get started"
+
+sleep 2
+
+logout

@@ -1,8 +1,8 @@
 # Basic stff
 source ~/.config/zsh/.zprofile #.zshenv stuff
-export TERM="xterm-256color"
+source ~/.config/zsh/zsh-autosuggestions.zsh
 export HISTFILE=~/.config/zsh/.zsh_history
-
+export TERM="xterm-256color"
 export EDITOR='vim'
 export TERMINAL='alacritty'
 export BROWSER='chromium'
@@ -14,26 +14,7 @@ autoload -Uz compinit && compinit #need the next two lines for case insensitive 
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
 
 # Prompt Settings
-PS1=" \[\033[1;36m\]\w >\[\033[1;34m\]>\[\033[0m\] "
-
-
-#declare -a PROMPTS
-#PROMPTS=(
-#    "∮"
-#    "∯"
-#    "≎"
-#    ""
-#    ""
-#    ""
-#    ""
-#    ""
-#    ""
-#    ""
-#    ""
-#)
-#RANDOM=$$$(date +%s)
-#ignition=${PROMPTS[$RANDOM % ${#RANDOM[*]}+1]}
-#PROMPT='%F{yellow}%1~%f %F{green}$ignition%f '
+PROMPT='%F{yellow}%f %F{green}%1~%f '
 
 ## Git Settings
 #autoload -Uz vcs_info
