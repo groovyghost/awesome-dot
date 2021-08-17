@@ -63,7 +63,6 @@ yay -S --noconfirm ${yay[@]}
 
 #Pull down dotfiles from Github
 cd ~
-git clone https://github.com/ghostr72/dots.git
 cp -a ~/dots/. ~/
 rm -rf ~/dots
 
