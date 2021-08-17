@@ -69,8 +69,8 @@ rm -rf ~/dots
 
 #change default shell
 chsh -s /usr/bin/zsh
-echo "Installation complete, Rebooting"
+echo "Installation complete"
 
-sleep 1
+sleep 2
 
-reboot
+exit
