@@ -46,7 +46,6 @@ aria2
 mpv
 tmate
 ranger
-python-pip
 feh
     )
 
@@ -62,20 +61,14 @@ otf-font-awesome-4
 sudo pacman -S --noconfirm ${pacman[@]}
 yay -S --noconfirm ${yay[@]}
 
-# xinitrc stuff
-chsh -s /usr/bin/zsh
-cp /etc/X11/xinit/xinitrc ~/.xinitrc
-sed -i '51,55d' ~/.xinitrc
-sed -i -r '/^\s*$/d' ~/.xinitrc
-echo "exec awesome" >> ~/.xinitrc
-
 #Pull down dotfiles from Github
 cd ~
 git clone https://github.com/ghostr72/dots.git
+cp -a ~/dots/. ~/
+rm -rf ~/dots
 
-#Linking up dotfiles & stuff
-sudo mv -v dots/.* ~/ && rm -rf dots
-
+#change default shell
+chsh -s /usr/bin/zsh
 echo "Installation complete, Rebooting"
 
 sleep 1
