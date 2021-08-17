@@ -1,4 +1,4 @@
-# Dotfiles
+##Dotfiles
 These are my dot files for Awesome WM in Arch.
 
 **The main things here are:**
@@ -27,4 +27,11 @@ These are my dot files for Awesome WM in Arch.
   `+sso+:-`                 `.-/+oso:    GPU: NVIDIA GeForce 610M/710M/810M/820M / GT 620M/625M/630M/720M
  `++:.                           `-/+/   Memory: 337MiB / 3819MiB
  .`                                 `/
+```
+##Usage
+```
+git clone https://github.com/ghostr72/dots.git
+cd dots
+chmod +x bootstrap
+./bootstrap
 ```
