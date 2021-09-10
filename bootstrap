@@ -63,8 +63,8 @@ yay -S --noconfirm ${yay[@]}
 
 #Pull down dotfiles from Github
 cd ~
-cp -a ~/dots/. ~/
-rm -rf ~/dots
+cp -a ~/DOTS-AWESOME/. ~/
+rm -rf ~/DOTS-AWESOME
 
 #change default shell
 chsh -s /usr/bin/zsh
