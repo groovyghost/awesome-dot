@@ -24,15 +24,14 @@ These are my dot files for Awesome WM in Arch.
       :osssssss/        osssso+++.       Terminal Font: Hack Nerd Font Mono
      /ossssssss/        +ssssooo/-       CPU: Intel i5-3230M (4) @ 2.600GHz
    `/ossssso+/:-        -:/+osssso+-     GPU: Intel 3rd Gen Core processor Graphics Controller
-  `+sso+:-`                 `.-/+oso:    GPU: NVIDIA GeForce 610M/710M/810M/820M / GT 620M/625M/630M/720M
+  `+sso+:-`                 `.-/+oso:    GPU: NVIDIA GeForce 610M/710M/810M/820M
  `++:.                           `-/+/   Memory: 337MiB / 3819MiB
  .`                                 `/
 ```
 # Usage
 ```
-git clone https://github.com/ghostr72/dots.git
-cd dots
+git clone https://github.com/groovyghost/awesome-dot.git
+cd awesome-dot
 chmod +x bootstrap
 ./bootstrap
 ```
-![Screenshot](https://github.com/ghostr72/dots/blob/main/desktop.jpg)
